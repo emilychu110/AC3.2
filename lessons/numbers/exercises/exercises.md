@@ -94,7 +94,7 @@ What are the differences between ```Double``` and ```Int``` in the numbers they 
 #### Question 11.
 
 What are the differences between ```Float``` and ```Double```?
-
+double high precision, float low precision
 #### Question 12.
 
 What will the following code do?:
@@ -104,8 +104,10 @@ var width: Double = 48.8
 var extraWidth: Float = 10.5
 
 let totalWidth = width + extraWidth
+shows error 
 ```
 
 #### Question 13.
 
 Alter the code in Question 12 to do what we want it to.
+'[[
