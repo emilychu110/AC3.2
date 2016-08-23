@@ -126,6 +126,6 @@ print(person)
 <!--For all multiples of 3 and 5, print out "FizzBuzz" instead of the number.-->
 <!--Question 10.-->
 <!---->
-<!--Write code that will print out the first 10 Fibonacci numbers:-->
-<!---->
-<!--0, 1, 1, 2, 3, 5, 8, 13, 21, 34-->
+Write code that will print out the first 10 Fibonacci numbers:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
