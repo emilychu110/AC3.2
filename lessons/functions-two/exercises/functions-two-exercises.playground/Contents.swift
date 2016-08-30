@@ -8,28 +8,54 @@ let itemCost = 45
 let tipPercentage = 0.15
 
 //Write your code below
+func totalWithTip (Cost: Int, Tip: Double) -> Double {
+    
+     let i = Double(Cost)
+    return (i * Tip) + i
+    
+}
 
 
+let myFinalCost = totalWithTip(itemCost,Tip: tipPercentage)  //Fill in the arguments
+ print(myFinalCost)
 
-let myFinalCost = totalWithTip() //Fill in the arguments
 
 //1b)Write a function  that it will print out total cost after tip and tax
 let taxPercentage = 0.09
 
 //Write your code below
 
+func totalWithTipAndTax (Cost: Int, Tax: Double) -> Double {
+    let i = Double(Cost)
+    return  (i * Tax) + myFinalCost
+}
 
-let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments
+
+let myFinalCostWithTipAndTax = totalWithTipAndTax(itemCost,Tax: taxPercentage) //Fill in the arguments
 
 
 //2a)Write a function takes an Int as input, and returns true if it is even, and false if it is odd
 
 //Write your code below
 
+
+func even (num: Int) -> String {
+    if num % 2 == 0 {
+        return "true"
+    } else {
+        return "odd"
+    }
+}
+
+    
+
 //2b) Using function above, write code that prints out whether dieRoll is even or odd
 
 let dieRoll = Int(arc4random_uniform(6) + 1)
-
+ 
+print(even(dieRoll))
+    
+    
 //3)
 /*
  Write a function that prints the numbers from 1 to x. EXCEPT:
@@ -40,6 +66,27 @@ let dieRoll = Int(arc4random_uniform(6) + 1)
  Your function should take in one parameter: x (the number to count up to)
  */
 
+var x = 20
+
+func numRange (num: Int) -> String? {
+    for i in 1...num {
+        if num % 3 == 0 && num % 5 == 0{
+            return "FizzBuzz"
+        
+        } else if num % 3 == 0 {
+            return "Buzz"
+        } else if num % 5 == 0 {
+            return "Fizz"
+        } else {
+            return "\(i)"
+        }
+    }
+    return nil
+}
+     print(numRange(x)!)
+    
+
+
 
 
 
@@ -49,28 +96,66 @@ let dieRoll = Int(arc4random_uniform(6) + 1)
 
 
 
+func theLargest (nums: [Int]) -> Int? {
+    guard var currentLarge = nums.first else { return nil}
+    for num in nums {
+        if num > currentLarge {
+            currentLarge = num
+        }
+    }
+    return currentLarge
+}
+
+
 //4b)
 let myArray = [3,5,1,3,532,1,4,91,20,30,92,143]
 
 //Using your function in part a, use String interpolation to print a sentence that states what the largest Int in myArray is
 
+print(theLargest(myArray)!)
+
 
 //4c)
 //Using your solution to 2a), print a sentence that states whether the largest Int in myArray is even or odd
 
+print(even(theLargest(myArray)!))
 
 //5a) Write a function that takes a String as input and returns the number of characters in the string
 
 //Write your code below
+var string1 = " "
 
+func inPutString (input: String) -> String {
+    for i in input.characters {
+    if i != " " {
+        string1 = "\(string1) + \(i)"
+        
+    }
+    
+}
+    return "\(string1.characters.count)"
+}
 
 
 //5b) Using your function above, print how many characters are in myString
 
 let myString = "Swift is a new programming language for iOS, OS X, watchOS, and tvOS apps that builds on the best of C and Objective-C, without the constraints of C compatibility."
 
+    inPutString(myString)
+
 
 //5c) Write a function that counts how many characters in a String match a specific character.  (e.g: count how many "a"s are in a String, or count how many ","s are in a String.
+var alphabet = "a"
+ var string2 = " "
+func inputString (input: String, alphabet: Character) -> String {
+    for i in input.characters {
+        if i  == alphabet {
+            string2 = "\(string2) + \(i)"
+        }
+    }
+    return "\(string2.characters.count)"
+}
+
 
 //Sample input:
 //let FiveCString = "This is a test string for your code"
@@ -82,6 +167,19 @@ let myString = "Swift is a new programming language for iOS, OS X, watchOS, and 
 
 
 //5d) Write a function that counts how many characters in a String match one of several possible characters.  (e.g: count how many vowels are in a String, or count how many "a"s "b"s and "c"s are in a Sting)
+var al3 = "c"
+var al2 = "b"
+var al1 = "a"
+var string3 = ""
+func inputString (input: String, word1: Character, word2: Character, word3: Character) -> String {
+    for i in input.characters {
+        if i == word1 || i == word2 || i == word3 {
+            string3 = "\(string3) + \(i)"
+        }
+    }
+    return "\(string3.characters.count)"
+}
+
 
 //Sample input:
 //let FiveDString = "This one is a little more complicated"
@@ -96,13 +194,24 @@ let myString = "Swift is a new programming language for iOS, OS X, watchOS, and 
 
 //6) Write a function that returns the number of unique Ints in an array of Ints
 //Sample input:
-//let inputArray = [3,1,4,1,3,2,6,1,9]
+let inputArray = [3,1,4,1,3,2,6,1,9]
 
 //Sample output:
 //4
 
 //Explanation:
 //2, 4, 6, 9 are unique in the array.  Every other number is not unique.
+var array: [Int] = []
+
+func inputNum (num: [Int]) -> [Int] {
+    for i in inputArray {
+        if !(array.contains(i)) {
+            array.append(i)
+        }
+}
+ return array
+}
+print(inputNum(array))
 
 
 //7) Write a function that converts a binary number into decimal.  The binary number will be given as an array of Ints.

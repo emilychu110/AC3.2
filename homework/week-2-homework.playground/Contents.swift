@@ -116,6 +116,7 @@ if let name = aMovie["name"] {
     print(name)
 }
 
+
 // 2. Print a list of all movie names, preferably on one lin
 
 var movie: [String] = []
@@ -209,25 +210,12 @@ for movie in movies {
 
 
 for movie in movies {
-    for i in movie {
-        if let element = i as? String {
-            
-            //        if let name = movie["name"] as? String {
-            //            if let cast = movie["cast"] as? String {
-            //                if let year = movie["year"] as? String {
-            
-            switch element {
-            case "action":
-                print("It was an \(movie["genre"]) \(movie["name"])")
-            default:
-                break
-            }
-        }
+    if let name = movie["genre"] as? String, var year = presidentsByYear["year"],
+    {
+        
     }
 }
-//    }
-//}
-//
+
 
 
 // Note how it should generate "an animation" in contrast to "a drama"
