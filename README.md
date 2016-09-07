@@ -1,7 +1,13 @@
 # Access Code 3.2: Mobile Development with iOS
-Hello on this nice Tuesday.
 
-The reading for tomorrow is on [closures](/lessons/closures-one).
+Whoops, this was not updated for a bit. Review and assessment tomorrow (Thursday). No 
+homework on the weekend!
+
+Topics: 
+
+1. Functions and closures
+2. Enums, Structs and Classes
+
 
 ## Schedule
 
