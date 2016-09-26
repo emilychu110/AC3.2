@@ -7,6 +7,15 @@
 | 2|1|2016-09-14| * |[Extending Monty](/lessons/2_1_ui_1) | [Link](https://docs.google.com/forms/d/e/1FAIpQLSd4odf2LEhBxF7L3X6Dnec_8wbUNtAVvTDwbjEVaVF3E1eInw/viewform) | [Link]() | [Link]() |
 | 2|1|2016-09-15| iTunesU Swift: 3. [More Swift and Foundation](https://itunes.apple.com/us/course/developing-ios-9-apps-swift/id1104579961) |[Tab Bar and Generics](/lessons/2_1_ui_2)| [Link](https://docs.google.com/forms/d/e/1FAIpQLSfbxmE7ISmpWgqMmMEwAUKSoG-haCkdkhNfJxaNc9O39CbrAA/viewform) | [Link]() | [Link]() |
 | 2|1|2016-09-16| Install XCode 8 and read about [Swift 3](https://www.hackingwithswift.com/swift3) |[Upgrade to Swift 3](/lessons/2_1_ui_3)| [Link](https://docs.google.com/forms/d/e/1FAIpQLScI0-RHCR-oUCZAz2P4NpuLmjf5ujyPArY1aCdmF0P5AoRmBA/viewform) | [Link]() | [Link]() |
+<<<<<<< HEAD
+=======
+| 2|2|2016-09-19|  |[Battleship Lab](/lessons/2_2_battleship_1)| [Link](https://docs.google.com/forms/d/e/1FAIpQLScI0-RHCR-oUCZAz2P4NpuLmjf5ujyPArY1aCdmF0P5AoRmBA/viewform) | [Link]() | [Link]() |
+| 2|2|2016-09-20|  |[Battleship Lab](/lessons/2_2_battleship_2)| [Link](https://docs.google.com/forms/d/e/1FAIpQLScI0-RHCR-oUCZAz2P4NpuLmjf5ujyPArY1aCdmF0P5AoRmBA/viewform) | [Link]() | [Link]() |
+| 2|2|2016-09-21|  |[Battleship Review]()| [Link]() | [Link]() | [Link]() |
+| 2|2|2016-09-22| See Resources in the linked lesson |[Table Views](/lessons/2_2_tableview)| [Link]() | [Link]() | [Link]() |
+| 2|2|2016-09-23|  |Review, Assessment, half day| [Link]() | [Link]() | [Link]() |
+| 2|3|2016-09-26| Re-read tableviews [Table Views](/lessons/2_2_tableview), both the Resources and the lesson from Thursday |Review, Assessment, half day| [Link]() | [Link]() | [Link]() |
+>>>>>>> 06fae3d4f7056ff49d711cb5ca78bf89d077ccf0
 
 
 ## Unit 1
